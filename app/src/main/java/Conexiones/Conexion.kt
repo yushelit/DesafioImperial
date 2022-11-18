@@ -57,6 +57,8 @@ object Conexion {
         val registro = ContentValues()
         registro.put("matricula",n.matricula)
         registro.put("tipo", n.tipo)
+        registro.put("aptoCarga", n.aptoCarga)
+        registro.put("imagen", n.imagen)
         bd.insert("naves", null, registro)
         bd.close()
     }
