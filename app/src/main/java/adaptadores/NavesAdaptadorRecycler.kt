@@ -1,7 +1,6 @@
 package adaptadores
 
 import Modelo.Nave
-import Modelo.Persona
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Color
@@ -24,7 +23,7 @@ class NavesAdaptadorRecycler(var naves : ArrayList<Nave>, var  context: Context)
         var seleccionado:Int = -1
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.itemView.setBackgroundColor(Color.parseColor("#FF00BCD4"));
+        //holder.itemView.setBackgroundColor(Color.parseColor("#FF00BCD4"));
         val item = naves.get(position)
 
         holder.bind(item, context, position, this)

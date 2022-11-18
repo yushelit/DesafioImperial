@@ -35,6 +35,10 @@ class MenuVader : AppCompatActivity() {
         binding.btnNave.setOnClickListener {
             startActivity(Intent(this,AgregarNave::class.java))
         }
+        binding.btnListaNaves.setOnClickListener {
+            var int = Intent(this,ListadoNaves::class.java)
+            resultLauncher.launch(int)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

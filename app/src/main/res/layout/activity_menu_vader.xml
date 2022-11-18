@@ -47,7 +47,7 @@
         android:id="@+id/btnListaNaves"
         android:layout_width="132dp"
         android:layout_height="76dp"
-        android:text="Listado de Pilotos"
+        android:text="Listado de Naves"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.845"

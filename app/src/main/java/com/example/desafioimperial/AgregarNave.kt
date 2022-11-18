@@ -49,26 +49,26 @@ class AgregarNave : AppCompatActivity() {
             var n : Nave
             if(binding.etnMatricula.text.isNotEmpty() && binding.spnTipo.isNotEmpty()){
                 if(tipo == "Caza"){
-                    n = Nave(binding.etnMatricula.text.toString().toInt(), "caza", "no")
+                    n = Nave(binding.etnMatricula.text.toString().toInt(), "caza", "no", "caza")
                     Conexion.addNave(this, n)
                     Toast.makeText(this, "Nave Insertada", Toast.LENGTH_SHORT).show()
                 }else if (tipo == "Bombardero"){
                     if(binding.switchCarga.isChecked){
-                        n = Nave(binding.etnMatricula.text.toString().toInt(), "bombardero", "si")
+                        n = Nave(binding.etnMatricula.text.toString().toInt(), "bombardero", "si","bombardero")
                         Conexion.addNave(this, n)
                         Toast.makeText(this, "Nave Insertada", Toast.LENGTH_SHORT).show()
                     }else{
-                        n = Nave(binding.etnMatricula.text.toString().toInt(), "bombardero", "no")
+                        n = Nave(binding.etnMatricula.text.toString().toInt(), "bombardero", "no","bombardero")
                         Conexion.addNave(this, n)
                         Toast.makeText(this, "Nave Insertada", Toast.LENGTH_SHORT).show()
                     }
                 }else{
                     if(binding.switchCarga.isChecked){
-                        n = Nave(binding.etnMatricula.text.toString().toInt(), "lanzadera", "si")
+                        n = Nave(binding.etnMatricula.text.toString().toInt(), "lanzadera", "si","lanzadera")
                         Conexion.addNave(this, n)
                         Toast.makeText(this, "Nave Insertada", Toast.LENGTH_SHORT).show()
                     }else{
-                        n = Nave(binding.etnMatricula.text.toString().toInt(), "lanzadera", "no")
+                        n = Nave(binding.etnMatricula.text.toString().toInt(), "lanzadera", "no","lanzadera")
                         Conexion.addNave(this, n)
                         Toast.makeText(this, "Nave Insertada", Toast.LENGTH_SHORT).show()
                     }

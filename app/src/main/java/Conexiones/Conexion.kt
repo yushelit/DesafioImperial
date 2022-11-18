@@ -91,4 +91,17 @@ object Conexion {
         bd.close()
         return cant
     }
+    fun obtenerNaves(contexto: AppCompatActivity):ArrayList<Nave>{
+        var naves:ArrayList<Nave> = ArrayList(1)
+
+        val admin = AdminSQLiteConexion(contexto, nombreBD, null, 1)
+        val bd = admin.writableDatabase
+        val fila = bd.rawQuery("select matricula,tipo,aptoCarga,imagen from personas", null)
+        while (fila.moveToNext()) {
+            var n:Nave = Nave(fila.getInt(0),fila.getString(1),fila.getString(3),fila.getString(4))
+            naves.add(n)
+        }
+        bd.close()
+        return naves
+    }
 }
