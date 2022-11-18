@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DesafioImperial</string>
+
+    <string-array name="tiposNaves">
+        <item>Caza</item>
+        <item>Bombardero</item>
+        <item>Carguero</item>
+    </string-array>
 </resources>
